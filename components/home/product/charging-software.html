@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Software | OCPP Platform | Charzee</title>
+    <meta name="description"
+        content="Charzee OCPP Charging Management Software — real-time monitoring, billing, analytics and remote charger management for EV networks.">
+    <meta name="keywords"
+        content="OCPP Software, EV Charging Platform, Charging Management System, EV CMS, Smart Charging Software">
+    <meta name="author" content="Charzee">
+    <meta name="theme-color" content="#06BFBF">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+
+    <a href="../../../products.html" class="btn btn-light product-page-back">
+        <i class="bi bi-arrow-left"></i> Back to Products
+    </a>
+
+<!-- ==========================================
+     PRODUCT HERO
+========================================== -->
+
+<section class="product-hero">
+
+    <div class="hero-shape shape-one"></div>
+    <div class="hero-shape shape-two"></div>
+
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <!-- Left Content -->
+            <div class="col-lg-6">
+
+                <span class="product-badge">
+                    <i class="bi bi-cpu-fill"></i>
+                    India's Smart EV Charging Platform
+                </span>
+
+                <h1 class="product-title">
+                    Manage Your EV Network
+                    <span>Smarter & Faster</span>
+                    With Charzee CMS
+                </h1>
+
+                <p class="product-description">
+                    Charzee's OCPP-enabled Charging Management Software gives
+                    you complete real-time control over your entire EV charging
+                    network — from a single charger to thousands across India.
+                    Monitor, bill, analyse and manage everything from one dashboard.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="../../../contact.html" class="btn btn-primary btn-lg">
+                        Request Demo
+                    </a>
+                    <a href="../../../contact.html" class="btn btn-outline-primary btn-lg">
+                        Get Started Free
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h2>500+</h2>
+                        <span>Chargers Managed</span>
+                    </div>
+                    <div class="stat-card">
+                        <h2>99.9%</h2>
+                        <span>Uptime</span>
+                    </div>
+                    <div class="stat-card">
+                        <h2>24×7</h2>
+                        <span>Monitoring</span>
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-4">
+                    <div class="col-6">
+                        <div class="hero-highlight">
+                            <i class="bi bi-cloud-check-fill"></i>
+                            <div>
+                                <h6>OCPP 1.6 / 2.0</h6>
+                                <small>Open Protocol</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hero-highlight">
+                            <i class="bi bi-phone-fill"></i>
+                            <div>
+                                <h6>Mobile App</h6>
+                                <small>iOS & Android</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hero-highlight">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <div>
+                                <h6>Analytics</h6>
+                                <small>Real-Time Reports</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hero-highlight">
+                            <i class="bi bi-cash-coin"></i>
+                            <div>
+                                <h6>Auto Billing</h6>
+                                <small>Integrated Payments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-badges">
+                    <span><i class="bi bi-patch-check-fill"></i> OCPP Certified</span>
+                    <span><i class="bi bi-shield-check"></i> SSL Encrypted</span>
+                    <span><i class="bi bi-cloud-fill"></i> Cloud Hosted</span>
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-6">
+                <div class="product-image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="../../../assets/images/products/ac-charger-banner.webp"
+                        alt="Charzee Charging Software Dashboard"
+                        class="img-fluid">
+                    <div class="floating-card top-card">
+                        <i class="bi bi-activity"></i>
+                        <div>
+                            <strong>Live</strong>
+                            <span>Session Tracking</span>
+                        </div>
+                    </div>
+                    <div class="floating-card bottom-card">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>99.9%</strong>
+                            <span>Platform Uptime</span>
+                        </div>
+                    </div>
+                    <div class="floating-card right-card">
+                        <i class="bi bi-cpu-fill"></i>
+                        <div>
+                            <strong>OCPP 2.0</strong>
+                            <span>Protocol Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     SPECIFICATIONS
+========================================== -->
+
+<section class="product-specifications section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <!-- <span class="section-badge">Platform Overview</span> -->
+            <h2 class="section-title">Software Capabilities</h2>
+            <p class="section-subtitle mx-auto">
+                A feature-rich, scalable platform built on open OCPP standards
+                for complete EV network management.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-cloud-check-fill"></i>
+                    <h5>OCPP Protocol</h5>
+                    <p>OCPP 1.6J & 2.0 Compliant</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-phone-fill"></i>
+                    <h5>Mobile App</h5>
+                    <p>iOS & Android Applications</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-person-badge-fill"></i>
+                    <h5>Authentication</h5>
+                    <p>RFID / App / QR Code</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-cash-coin"></i>
+                    <h5>Billing Engine</h5>
+                    <p>Per Unit / Per Minute / Flat Rate</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <h5>Analytics</h5>
+                    <p>Real-Time Reports & Insights</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="spec-card">
+                    <i class="bi bi-shield-lock-fill"></i>
+                    <h5>Security</h5>
+                    <p>SSL Encrypted / Role-Based Access</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     KEY FEATURES
+========================================== -->
+
+<section class="key-features section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <!-- <span class="section-badge">Platform Features</span> -->
+            <h2 class="section-title">Everything You Need to Run Your EV Network</h2>
+            <p class="section-subtitle mx-auto">
+                Charzee CMS delivers powerful tools to operate, monetise and
+                scale your EV charging infrastructure effortlessly.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-speedometer2"></i></div>
+                    <h4>Live Dashboard</h4>
+                    <p>Real-time view of all charger statuses, active sessions and network health from one screen.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-cash-coin"></i></div>
+                    <h4>Smart Billing</h4>
+                    <p>Automated billing per kWh, per minute or flat rates with payment gateway integration.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-phone-fill"></i></div>
+                    <h4>Mobile App</h4>
+                    <p>EV drivers can find, start, stop and pay for charging sessions via iOS & Android app.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+                    <h4>User Management</h4>
+                    <p>Role-based access for operators, admins and drivers with RFID and app authentication.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    <h4>Analytics & Reports</h4>
+                    <p>Detailed energy consumption, revenue, session history and usage trend reports.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-tools"></i></div>
+                    <h4>Remote Diagnostics</h4>
+                    <p>Remotely restart, update firmware and troubleshoot chargers without a site visit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     APPLICATIONS
+========================================== -->
+
+<section class="applications section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <!-- <span class="section-badge">Applications</span> -->
+            <h2 class="section-title">Built for Every Type of EV Network</h2>
+            <p class="section-subtitle mx-auto">
+                Whether you run 2 chargers or 2000, Charzee CMS scales with
+                your business across all verticals.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-building-fill"></i></div>
+                    <h4>Corporate Fleets</h4>
+                    <p>Manage employee charging, cost allocation and shift scheduling for large EV fleets.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-shop-window"></i></div>
+                    <h4>Retail & Malls</h4>
+                    <p>Offer paid or free charging to customers with branded app experience and QR-based access.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-signpost-split-fill"></i></div>
+                    <h4>Highway Corridors</h4>
+                    <p>Manage multi-site fast charging networks across highways with centralised remote control.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-buildings-fill"></i></div>
+                    <h4>Residential Societies</h4>
+                    <p>Allocate chargers to residents, track usage and auto-generate monthly billing statements.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-hospital-fill"></i></div>
+                    <h4>Hospitals & Institutions</h4>
+                    <p>Priority charging access, visitor management and energy tracking for large campuses.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="application-card">
+                    <div class="application-icon"><i class="bi bi-globe2"></i></div>
+                    <h4>Public Networks</h4>
+                    <p>Open-network public charging with roaming support, dynamic pricing and real-time availability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     TECHNICAL SPECIFICATIONS
+========================================== -->
+
+<section class="technical-specifications section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <!-- <span class="section-badge">Technical Details</span> -->
+            <h2 class="section-title">Platform Specifications</h2>
+            <p class="section-subtitle mx-auto">
+                A robust, cloud-native platform engineered for performance,
+                security and seamless integration.
+            </p>
+        </div>
+        <div class="spec-table-wrapper">
+            <table class="table spec-table">
+                <tbody>
+                    <tr><th>OCPP Protocol</th><td>OCPP 1.6J & 2.0.1</td></tr>
+                    <tr><th>Deployment</th><td>Cloud SaaS / On-Premise</td></tr>
+                    <tr><th>Mobile Platforms</th><td>iOS & Android</td></tr>
+                    <tr><th>Authentication</th><td>RFID / App / QR Code / ISO 15118</td></tr>
+                    <tr><th>Payment Gateway</th><td>Razorpay / Paytm / UPI Supported</td></tr>
+                    <tr><th>API Access</th><td>RESTful API & Webhooks</td></tr>
+                    <tr><th>Data Security</th><td>SSL/TLS 256-bit Encryption</td></tr>
+                    <tr><th>Access Control</th><td>Role-Based (Admin / Operator / Driver)</td></tr>
+                    <tr><th>Reporting</th><td>Real-Time + Historical Analytics</td></tr>
+                    <tr><th>Uptime SLA</th><td>99.9% Guaranteed</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     WHY CHOOSE CHARZEE
+========================================== -->
+
+<section class="why-charzee section sticky-scroll-section">
+    <div class="container">
+        <div class="row align-items-center g-5 sticky-scroll-section-row">
+            <div class="col-lg-6">
+                <div class="why-image sticky-scroll-media">
+                    <img src="../../../assets/images/products/ac-charger-banner.webp"
+                        class="img-fluid" alt="Charzee CMS Platform">
+                    <div class="experience-card">
+                        <h2>5+</h2>
+                        <span>Years of Innovation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span class="section-badge">Why Choose Charzee CMS</span>
+                <h2 class="section-title mt-3">The Platform Built for India's EV Revolution</h2>
+                <p class="section-subtitle">
+                    Charzee CMS is designed from the ground up for the Indian EV market —
+                    with local payment methods, multi-language support, and infrastructure
+                    that scales with your network.
+                </p>
+                <div class="why-list mt-4">
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>OCPP 1.6J & 2.0 Open Standard</span></div>
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>UPI / Razorpay Payment Integration</span></div>
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>White-Label Mobile App Available</span></div>
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>Multi-Site & Multi-Operator Support</span></div>
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>99.9% Platform Uptime SLA</span></div>
+                    <div class="why-item"><i class="bi bi-check-circle-fill"></i><span>24×7 Technical Support</span></div>
+                </div>
+                <div class="row mt-5 g-4">
+                    <div class="col-4">
+                        <div class="why-counter"><h3>500+</h3><span>Chargers</span></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="why-counter"><h3>99.9%</h3><span>Uptime</span></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="why-counter"><h3>24×7</h3><span>Support</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     FAQ
+========================================== -->
+
+<section class="product-faq section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-badge">Frequently Asked Questions</span>
+            <h2 class="section-title">Everything You Need to Know</h2>
+            <p class="section-subtitle mx-auto">
+                Common questions about Charzee's EV Charging Management Software.
+            </p>
+        </div>
+        <div class="accordion custom-faq" id="softwareFaq">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq1">
+                        Is Charzee CMS compatible with all EV chargers?
+                    </button>
+                </h2>
+                <div id="sfaq1" class="accordion-collapse collapse show" data-bs-parent="#softwareFaq">
+                    <div class="accordion-body">
+                        Yes. Charzee CMS supports any OCPP 1.6J or 2.0 compatible charger from any manufacturer, making it truly interoperable.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq2">
+                        Can I use my own branding on the mobile app?
+                    </button>
+                </h2>
+                <div id="sfaq2" class="accordion-collapse collapse" data-bs-parent="#softwareFaq">
+                    <div class="accordion-body">
+                        Yes. We offer a white-label version of the Charzee mobile app where you can use your own logo, brand colors and app name.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq3">
+                        What payment methods are supported?
+                    </button>
+                </h2>
+                <div id="sfaq3" class="accordion-collapse collapse" data-bs-parent="#softwareFaq">
+                    <div class="accordion-body">
+                        Charzee CMS supports UPI, credit/debit cards, wallets via Razorpay and Paytm integration. RFID wallet top-up is also supported.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq4">
+                        Is there an API for integration with third-party systems?
+                    </button>
+                </h2>
+                <div id="sfaq4" class="accordion-collapse collapse" data-bs-parent="#softwareFaq">
+                    <div class="accordion-body">
+                        Yes. Charzee CMS provides a full RESTful API and webhooks for integration with fleet management systems, ERP, and third-party platforms.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     FINAL CTA
+========================================== -->
+
+
+<!-- Bootstrap -->
+<div id="serviceAgent"></div>
+<div id="productFooter"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- JS -->
+<script src="../../../assets/js/product-footer.js"></script>
+<script src="../../../assets/js/loader.js"></script>
+<script src="../../../assets/js/navbar.js"></script>
+<script src="../../../assets/js/service-agent.js"></script>
+<script src="../../../assets/js/counter.js"></script>
+<script src="../../../assets/js/animation.js"></script>
+<script src="../../../assets/js/backtotop.js"></script>
+<script src="../../../assets/js/smoothscroll.js"></script>
+<script src="../../../assets/js/main.js"></script>
+
+    <script src="../../../assets/js/content-slider.js"></script>
+</body>
+</html>

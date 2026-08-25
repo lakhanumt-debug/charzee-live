@@ -1,0 +1,125 @@
+<!-- ==========================================
+     OUR EXPERTISE SECTION
+========================================== -->
+
+<section class="expertise section sticky-scroll-section" id="expertise">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading text-center mb-5" data-aos="fade-up">
+
+            <h2 class="section-title">Our Expertise</h2>
+
+            <p class="section-subtitle mx-auto">
+                At Charzee, our expertise lies in delivering integrated energy and mobility
+                solutions that combine EV charging infrastructure, solar energy systems,
+                and advanced lithium-ion battery storage. With a dedicated in-house
+                Research & Development centre, we continuously innovate to design
+                technologies that are efficient, reliable, and future-ready.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center g-5 sticky-scroll-section-row">
+
+            <!-- Left: Expertise List -->
+            <div class="col-lg-6" data-aos="fade-right">
+
+                <div class="expertise-list">
+
+                    <div class="expertise-item">
+                        <h5>EV Charging Infrastructure</h5>
+                        <p>Development of compact, scalable, and cost-effective charging stations.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h5>Solar Energy Systems</h5>
+                        <p>Harnessing renewable energy through rooftop and ground-mounted installations.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h5>Battery Storage Solutions</h5>
+                        <p>Advanced lithium-ion storage for uninterrupted power and optimized energy management.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h5>Innovation through R&D</h5>
+                        <p>Proprietary designs and breakthrough technologies developed in-house to ensure sustainability and competitiveness.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h5>Customized Solutions</h5>
+                        <p>Tailored energy systems for communities, enterprises, and institutions to meet diverse mobility and sustainability needs.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right: Image -->
+            <div class="col-lg-6">
+
+                <!-- Note: no data-aos here on purpose — AOS leaves a persistent
+                     CSS transform on the element even after animating in, and a
+                     transform on this column would break position:sticky on the
+                     .sticky-scroll-media image below it. -->
+                <div class="expertise-image sticky-scroll-media">
+                    <img src="assets/images/products/solar-panels.webp" class="img-fluid rounded-4 shadow-lg" alt="Charzee Expertise - Solar and EV Charging">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+    .expertise{
+        padding:90px 0;
+        background:#ffffff;
+    }
+
+    .expertise-item{
+        padding:22px 0;
+        border-bottom:1px solid var(--gray-light);
+    }
+
+    .expertise-item:first-child{
+        padding-top:0;
+    }
+
+    .expertise-item:last-child{
+        border-bottom:none;
+        padding-bottom:0;
+    }
+
+    .expertise-item h5{
+        font-size:19px;
+        font-weight:700;
+        color:var(--heading);
+        margin-bottom:8px;
+    }
+
+    .expertise-item p{
+        font-size:15px;
+        color:var(--text);
+        line-height:1.7;
+        margin:0;
+    }
+
+    .expertise-image img{
+        width:100%;
+        object-fit:cover;
+        max-height:520px;
+    }
+
+    @media (max-width:991px){
+        .expertise{padding:60px 0;}
+        .expertise-image{margin-top:10px;}
+    }
+
+</style>

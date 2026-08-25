@@ -1,0 +1,41 @@
+/* ==========================================
+   CHARZEE EV SOLUTIONS
+   MAIN STYLE FILE
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Variables */
+@import url("variables.css");
+
+/* Reset */
+@import url("reset.css");
+
+/* Utilities */
+@import url("utilities.css");
+
+/* Header */
+@import url("header.css");
+
+/* Hero */
+@import url("hero.css");
+
+/* Sections */
+@import url("sections.css");
+
+/* Footer */
+@import url("footer.css");
+
+/* Animations */
+@import url("animations.css");
+
+@import url("product.css");
+
+@import url("product-details.css");
+
+@import url("contact.css");
+
+/* Responsive (Always Last) */
+@import url("responsive.css");
+
