@@ -87,6 +87,35 @@ function loadComponents() {
                     initServiceAgent();
                 }
 
+                // ------------------------------------------------------
+                // Fix: mobile browsers (mainly iOS Safari / some Android
+                // WebViews) can fail to paint a `position: fixed` element
+                // that was inserted into the page *after* first paint —
+                // it stays invisible until a scroll/resize forces a
+                // relayout. Since the footer (and its fixed .social-toggle
+                // and #backToTop buttons) is injected here via innerHTML,
+                // force an immediate reflow on those specific elements so
+                // they render right away instead of waiting on the user
+                // to scroll.
+                // ------------------------------------------------------
+                if (id === "footer") {
+                    const fixedEls = [
+                        element.querySelector(".social-toggle"),
+                        document.getElementById("backToTop")
+                    ];
+
+                    fixedEls.forEach(fixedEl => {
+                        if (!fixedEl) return;
+                        fixedEl.style.display = "none";
+                        void fixedEl.offsetHeight; // force reflow
+                        fixedEl.style.display = "";
+                    });
+
+                    // Extra safety net for stubborn WebViews: nudge the
+                    // browser to recompute fixed-position compositing.
+                    window.dispatchEvent(new Event("resize"));
+                }
+
                 removeCurrentPageLinks(element, id);
             })
             .catch(error => console.error(error));

@@ -39,3 +39,114 @@
 /* Responsive (Always Last) */
 @import url("responsive.css");
 
+
+
+/* ==========================================================
+   FINAL MOBILE NAVBAR FIX
+   Uses the existing Bootstrap navbar/collapse in header.html.
+   The hamburger opens #navbar and the actual nav links are
+   displayed inside it, including the Call Us button.
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .custom-navbar {
+        position: relative;
+    }
+
+    /* The Bootstrap collapse is the mobile menu */
+    .custom-navbar .navbar-collapse {
+        display: none;
+        width: 100%;
+        margin-top: 12px;
+        padding: 18px 20px;
+        background: #111827;
+        border-radius: 18px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+    }
+
+    .custom-navbar .navbar-collapse.show {
+        display: block !important;
+    }
+
+    .custom-navbar .navbar-collapse.collapsing {
+        display: block !important;
+        height: auto !important;
+        overflow: hidden;
+    }
+
+    /* IMPORTANT: show the real menu items */
+    .custom-navbar .navbar-collapse .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
+        gap: 0 !important;
+        margin: 0 !important;
+    }
+
+    .custom-navbar .navbar-collapse .nav-item {
+        width: 100%;
+    }
+
+    .custom-navbar .navbar-collapse .nav-link {
+        display: block !important;
+        width: 100%;
+        padding: 13px 4px !important;
+        color: #fff !important;
+    }
+
+    /* Keep the Call Us button visible inside the opened menu */
+    .custom-navbar .navbar-collapse > .btn {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    /* Mobile Products dropdown */
+    .custom-navbar .navbar-collapse .dropdown-menu {
+        position: static !important;
+        float: none !important;
+        width: 100% !important;
+        margin: 6px 0 10px !important;
+        padding: 12px !important;
+        background: #1f2937 !important;
+        border-radius: 12px !important;
+        box-shadow: none !important;
+    }
+
+    .custom-navbar .navbar-collapse .mega-menu .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .custom-navbar .navbar-collapse .mega-menu .row {
+        margin: 0;
+    }
+
+    .custom-navbar .navbar-collapse .mega-menu [class*="col-"] {
+        width: 100%;
+        padding: 8px 4px;
+    }
+
+    .custom-navbar .navbar-collapse .mega-menu a {
+        display: block;
+        padding: 7px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .custom-navbar .navbar-collapse .mega-title {
+        color: #fff;
+        margin: 5px 0 8px;
+    }
+}
+
+/* Desktop: normal navbar */
+@media (min-width: 992px) {
+    .custom-navbar .navbar-collapse {
+        display: flex !important;
+    }
+}

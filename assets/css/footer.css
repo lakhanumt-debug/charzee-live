@@ -387,6 +387,16 @@
     transform: translateY(-50%);
     z-index: 1000;
 
+    /* Force this fixed layer onto its own GPU compositing layer so it
+       paints immediately on load. Without this, mobile Safari/WebView
+       browsers can fail to render a fixed element that contains a
+       backdrop-filter (see .social-toggle-menu below) until a scroll
+       event forces a repaint. */
+    -webkit-transform: translateY(-50%) translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
 }
 
 .social-toggle-link{
@@ -420,7 +430,13 @@
     border-radius: 999px;
     background: rgba(255,255,255,.86);
     backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     box-shadow: 0 18px 42px rgba(17,24,39,.14);
+
+    /* Same GPU-layer fix as .social-toggle, applied to the element that
+       actually carries the backdrop-filter. */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 
 }
 
@@ -459,17 +475,26 @@
 
     .social-toggle{
 
-        right: 0;
-        top: auto;
-        bottom: 92px;
-        transform: none;
+        left: auto;
+        right: 12px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%) translateZ(0);
+
+    }
+
+    .social-toggle-menu{
+
+        flex-direction: column;
 
     }
 
     .social-toggle-link{
 
-        width: 46px;
-        height: 46px;
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
 
     }
 
