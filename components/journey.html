@@ -1,0 +1,156 @@
+<!-- ==========================================
+     OUR JOURNEY — TIMELINE (About Us Page)
+========================================== -->
+
+<section class="journey section" id="journey">
+
+    <div class="container">
+
+        <div class="section-heading text-center mb-5">
+
+            <span class="section-badge">Our Journey</span>
+
+            <h2 class="section-title">
+                From a Bold Idea to India's Trusted EV Charging Partner
+            </h2>
+
+            <p class="section-subtitle mx-auto">
+                A quick look at how Charzee has grown, milestone by milestone,
+                on its mission to power a smarter, cleaner mobility future.
+            </p>
+
+        </div>
+
+        <div class="journey-timeline">
+
+            <div class="journey-item" data-aos="fade-up">
+                <div class="journey-year">2019</div>
+                <div class="journey-content">
+                    <h4>Charzee Is Founded</h4>
+                    <p>Started with a single mission — build smart, reliable, and affordable EV charging infrastructure for India.</p>
+                </div>
+            </div>
+
+            <div class="journey-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="journey-year">2020</div>
+                <div class="journey-content">
+                    <h4>First AC & DC Chargers Launched</h4>
+                    <p>Rolled out our first generation of smart AC and DC fast chargers for homes and commercial spaces.</p>
+                </div>
+            </div>
+
+            <div class="journey-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="journey-year">2021</div>
+                <div class="journey-content">
+                    <h4>OCPP Platform Goes Live</h4>
+                    <p>Launched our OCPP-enabled Charging Management Software for real-time monitoring, billing and remote control.</p>
+                </div>
+            </div>
+
+            <div class="journey-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="journey-year">2022</div>
+                <div class="journey-content">
+                    <h4>Solar-Integrated Charging</h4>
+                    <p>Expanded into solar-powered EV charging stations and solar power plants for a truly sustainable ecosystem.</p>
+                </div>
+            </div>
+
+            <div class="journey-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="journey-year">2023</div>
+                <div class="journey-content">
+                    <h4>Battery Energy Storage Systems (BESS)</h4>
+                    <p>Introduced BESS solutions for backup power, grid stabilization and peak-load shaving across sites.</p>
+                </div>
+            </div>
+
+            <div class="journey-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="journey-year">2024–Today</div>
+                <div class="journey-content">
+                    <h4>Scaling Across India</h4>
+                    <p>Now powering 100+ projects across 25+ cities, with a full range of EV, solar and BESS products and a growing nationwide network.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+    .journey{
+        padding:90px 0;
+        background:var(--light);
+    }
+
+    .journey-timeline{
+        position:relative;
+        max-width:900px;
+        margin:0 auto;
+        padding-left:32px;
+    }
+
+    .journey-timeline::before{
+        content:"";
+        position:absolute;
+        left:6px;
+        top:6px;
+        bottom:6px;
+        width:2px;
+        background:var(--gradient-primary);
+        opacity:.35;
+    }
+
+    .journey-item{
+        position:relative;
+        padding-bottom:36px;
+    }
+
+    .journey-item:last-child{
+        padding-bottom:0;
+    }
+
+    .journey-item::before{
+        content:"";
+        position:absolute;
+        left:-32px;
+        top:6px;
+        width:14px;
+        height:14px;
+        border-radius:50%;
+        background:var(--gradient-primary);
+        box-shadow:0 0 0 4px rgba(6,191,191,.15);
+    }
+
+    .journey-year{
+        font-size:14px;
+        font-weight:700;
+        letter-spacing:.5px;
+        color:var(--primary);
+        text-transform:uppercase;
+        margin-bottom:6px;
+    }
+
+    .journey-content h4{
+        font-size:20px;
+        font-weight:700;
+        color:var(--heading);
+        margin-bottom:8px;
+    }
+
+    .journey-content p{
+        font-size:15px;
+        color:var(--text);
+        line-height:1.7;
+        margin:0;
+        max-width:560px;
+    }
+
+    @media (max-width:768px){
+        .journey{padding:60px 0;}
+        .journey-timeline{padding-left:26px;}
+        .journey-item::before{left:-26px;}
+    }
+
+</style>

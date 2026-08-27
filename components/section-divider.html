@@ -1,0 +1,139 @@
+<!-- ==========================================
+     SECTION DIVIDER / SPACER CARD
+========================================== -->
+
+<style>
+/* ══════════════════════════════════════════════
+   SECTION DIVIDER STYLES
+════════════════════════════════════════════════ */
+
+.section-divider {
+    padding: 50px 0 30px;
+    background: transparent;
+}
+
+.divider-card {
+    position: relative;
+    height: 120px;
+    background: linear-gradient(135deg, #06BFBF 0%, #009999 100%);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 32px rgba(6,191,191,.2);
+    animation: dividerPulse 3s ease-in-out infinite;
+}
+
+.divider-card::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,.08);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+.divider-card::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,.05);
+    border-radius: 50%;
+    bottom: -80px;
+    left: -80px;
+}
+
+.divider-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.divider-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: block;
+    animation: iconBounce 2s ease-in-out infinite;
+}
+
+.divider-text {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@keyframes dividerPulse {
+    0%, 100% {
+        box-shadow: 0 12px 32px rgba(6,191,191,.2);
+    }
+    50% {
+        box-shadow: 0 16px 40px rgba(6,191,191,.3);
+    }
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-divider {
+        padding: 40px 0 25px;
+    }
+
+    .divider-card {
+        height: 100px;
+    }
+
+    .divider-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .divider-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-divider {
+        padding: 30px 0 20px;
+    }
+
+    .divider-card {
+        height: 90px;
+    }
+
+    .divider-icon {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .divider-text {
+        font-size: 13px;
+    }
+}
+</style>
+
+<section class="section-divider">
+    <div class="container">
+        <div class="divider-card">
+            <div class="divider-content">
+                <i class="bi bi-arrow-down divider-icon"></i>
+                <p class="divider-text">Next Section</p>
+            </div>
+        </div>
+    </div>
+</section>
