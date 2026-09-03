@@ -1,0 +1,588 @@
+/* ==========================================
+   CHARZEE EV SOLUTIONS
+   FOOTER.CSS
+========================================== */
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    position: relative;
+    background: #111827;
+    color: rgba(255,255,255,.75);
+    padding: 90px 0 25px;
+    overflow: hidden;
+
+}
+
+.footer::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background: var(--gradient-primary);
+
+}
+
+/* ==========================================
+   FOOTER LOGO
+========================================== */
+
+.footer-logo{
+
+    display: inline-block;
+    margin-bottom: 25px;
+
+}
+
+.footer-logo img{
+
+    max-height: 65px;
+
+}
+
+.footer-description{
+
+    color: rgba(255,255,255,.65);
+    line-height: 1.9;
+    margin-bottom: 30px;
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.footer-social{
+
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.footer-social a{
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,.08);
+
+    color: #fff;
+
+    transition: var(--transition);
+
+}
+
+.footer-social a:hover{
+
+    background: var(--gradient-primary);
+    transform: translateY(-5px);
+
+}
+
+/* ==========================================
+   FOOTER TITLES
+========================================== */
+
+.footer-title{
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.footer-title::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -12px;
+
+    width: 55px;
+    height: 3px;
+
+    border-radius: 10px;
+
+    background: var(--gradient-primary);
+
+}
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer-links{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer-links li{
+
+    margin-bottom: 14px;
+
+}
+
+.footer-links a{
+
+    color: rgba(255,255,255,.70);
+    text-decoration: none;
+    transition: var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color: var(--primary);
+    padding-left: 8px;
+
+}
+
+/* ==========================================
+   CONTACT INFO
+========================================== */
+
+.footer-contact{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer-contact li{
+
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-bottom: 22px;
+
+}
+
+.footer-contact i{
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--gradient-primary);
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 18px;
+
+}
+
+.footer-contact span{
+
+    color: rgba(255,255,255,.75);
+    line-height: 1.7;
+
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.footer-newsletter{
+
+    margin-top: 20px;
+
+}
+
+.footer-newsletter p{
+
+    color: rgba(255,255,255,.65);
+    margin-bottom: 18px;
+
+}
+
+.footer-form{
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-form input{
+
+    flex: 1;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 0 20px;
+
+    outline: none;
+
+}
+
+.footer-form button{
+
+    width: 55px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--gradient-primary);
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+}
+
+.footer-form button:hover{
+
+    transform: scale(1.08);
+
+}
+
+/* ==========================================
+   FOOTER BOTTOM
+========================================== */
+
+.footer-bottom{
+
+    margin-top: 70px;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+}
+
+.footer-bottom-content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.footer-bottom p{
+
+    margin: 0;
+    color: rgba(255,255,255,.60);
+
+}
+
+.footer-bottom-links{
+
+    display: flex;
+    gap: 25px;
+
+}
+
+.footer-bottom-links a{
+
+    color: rgba(255,255,255,.60);
+    transition: var(--transition);
+
+}
+
+.footer-bottom-links a:hover{
+
+    color: var(--primary);
+
+}
+
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+.back-to-top{
+
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: var(--gradient-primary);
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    z-index: 999;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.back-to-top.show{
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.back-to-top:hover{
+
+    transform: translateY(-8px);
+
+}
+
+/* ==========================================
+   SOCIAL SIDE TOGGLE
+========================================== */
+
+.social-toggle{
+
+    position: fixed;
+    right: 14px;
+    top: 58%;
+    transform: translateY(-50%);
+    z-index: 1000;
+
+    /* Force this fixed layer onto its own GPU compositing layer so it
+       paints immediately on load. Without this, mobile Safari/WebView
+       browsers can fail to render a fixed element that contains a
+       backdrop-filter (see .social-toggle-menu below) until a scroll
+       event forces a repaint. */
+    -webkit-transform: translateY(-50%) translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+}
+
+.social-toggle-link{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 12px 26px rgba(17,24,39,.18);
+    transition: var(--transition);
+
+}
+
+.social-toggle-link:hover{
+
+    color: #fff;
+    transform: translateX(-6px) scale(1.04);
+
+}
+
+.social-toggle-menu{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.86);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 18px 42px rgba(17,24,39,.14);
+
+    /* Same GPU-layer fix as .social-toggle, applied to the element that
+       actually carries the backdrop-filter. */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+}
+
+.social-toggle-link{
+
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.social-toggle-link.whatsapp{
+
+    background: #25D366;
+
+}
+
+.social-toggle-link.facebook{
+
+    background: #1877F2;
+
+}
+
+.social-toggle-link.instagram{
+
+    background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+
+}
+
+.social-toggle-link.linkedin{
+
+    background: #0A66C2;
+
+}
+
+@media (max-width: 767px){
+
+    .social-toggle{
+
+        left: auto;
+        right: 10px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%) translateZ(0);
+
+    }
+
+    .social-toggle-menu{
+
+        flex-direction: column;
+
+    }
+
+    .social-toggle-link{
+
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+
+    }
+
+}
+
+/* ==========================================
+   FOOTER SHAPE
+========================================== */
+
+.footer-shape{
+
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        rgba(6,191,191,.25),
+        transparent 70%
+    );
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================
+   FOOTER RESPONSIVE — Extra fixes
+========================================== */
+
+@media (max-width: 768px) {
+
+    .footer-bottom-content {
+        flex-direction : column;
+        text-align     : center;
+        gap            : 12px;
+    }
+
+    .footer-bottom-links {
+        justify-content : center;
+        flex-wrap       : wrap;
+        gap             : 14px;
+    }
+
+    .footer-form {
+        flex-direction : column;
+        gap            : 12px;
+    }
+
+    .footer-form input {
+        border-radius : 50px;
+        height        : 50px;
+    }
+
+    .footer-form button {
+        width         : 100%;
+        border-radius : 50px;
+        height        : 50px;
+    }
+
+}
+
+/* ==========================================
+   SOCIAL TOGGLE — VIEWPORT OVERFLOW FIX
+========================================== */
+.social-toggle {
+    position: fixed;
+    left: auto;
+    right: max(10px, env(safe-area-inset-right));
+    width: fit-content;
+    max-width: calc(100vw - 20px);
+    box-sizing: border-box;
+}
+
+.social-toggle-menu {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .social-toggle {
+        right: max(8px, env(safe-area-inset-right));
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%) translateZ(0);
+    }
+}

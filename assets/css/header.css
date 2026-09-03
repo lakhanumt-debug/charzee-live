@@ -1,0 +1,573 @@
+/* ==========================================
+   CHARZEE EV SOLUTIONS
+   HEADER.CSS
+========================================== */
+
+
+/* ==========================================
+   HEADER
+========================================== */
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 50%;
+    margin-top: var(--bs-dropdown-spacer);
+}
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:990;
+
+    transition:all .35s ease;
+
+    background:#fff;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:0 8px 24px rgba(17,24,39,.06);
+
+}
+
+.header.scrolled{
+
+    background:rgba(255,255,255,.98);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.custom-navbar{
+
+    /* padding:14px 0; */
+
+    transition:.35s;
+
+}
+
+.header.scrolled .custom-navbar{
+
+    padding:10px 0;
+
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.navbar-brand img{
+
+    height:70px;
+
+    transition:.35s;
+
+}
+
+.header.scrolled .navbar-brand img{
+
+    height:50px;
+
+}
+
+
+/* ==========================================
+   NAV MENU
+========================================== */
+
+.navbar-nav{
+
+    align-items:center;
+
+    gap:39px;
+
+}
+
+.nav-item{
+
+    position:relative;
+
+}
+
+.nav-link{
+
+    color:var(--dark) !important;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:9px 12px !important;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.header.scrolled .nav-link{
+
+    color:var(--dark) !important;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary)!important;
+
+}
+
+
+/* ==========================================
+   UNDERLINE ANIMATION
+========================================== */
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+
+    bottom:4px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gradient-primary);
+
+    transition:.35s;
+
+}
+
+.nav-link:hover::after{
+
+    width:calc(100% - 24px);
+
+}
+
+
+/* ==========================================
+   ACTIVE MENU
+========================================== */
+
+.nav-link.active{
+
+    color:var(--primary)!important;
+
+}
+
+.nav-link.active::after{
+
+    width:calc(100% - 24px);
+
+}
+
+.custom-navbar .navbar-collapse > .btn{
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    box-shadow:0 12px 26px rgba(6,191,191,.22);
+
+}
+
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    animation:dropdown .3s ease;
+
+}
+
+@keyframes dropdown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   DROPDOWN ITEMS
+========================================== */
+
+.dropdown-item{
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.dropdown-item:hover{
+
+    background:var(--gradient-primary);
+
+    color:#ffffff;
+
+}
+
+
+/* ==========================================
+   MEGA MENU
+========================================== */
+
+.mega-menu{
+
+    width:50%;
+
+    left:50%;
+
+    right:auto;
+
+    transform:translateX(-50%);
+
+    padding:32px;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.mega-menu .container{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:0;
+
+    padding-right:0;
+
+}
+
+.mega-menu .row{
+
+    margin-left:-12px;
+
+    margin-right:-12px;
+
+}
+
+.mega-menu [class*="col-"]{
+
+    padding-left:12px;
+
+    padding-right:12px;
+
+}
+
+.mega-menu img{
+
+    border-radius:18px;
+
+    width:100%;
+
+}
+
+.mega-menu h6{
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.mega-menu a{
+
+    display:block;
+
+    padding:10px 0;
+
+    color:var(--gray);
+
+    transition:.3s;
+
+}
+
+.mega-menu a:hover{
+
+    color:var(--primary);
+
+    padding-left:8px;
+
+}
+
+
+/* ==========================================
+   NAV CTA BUTTON
+========================================== */
+
+.nav-btn{
+
+    padding:12px 28px;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.nav-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* ==========================================
+   HAMBURGER
+========================================== */
+
+.navbar-toggler{
+
+    border:none;
+
+    box-shadow:none!important;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+.navbar-toggler-icon{
+
+    filter:none;
+
+}
+
+.header.transparent .navbar-toggler-icon{
+
+    filter:brightness(10);
+
+}
+
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+@media(max-width:991px){
+
+.custom-navbar{
+
+    padding:15px 0;
+
+}
+
+.navbar-collapse{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    margin-top:18px;
+
+    padding:20px;
+
+    max-height:calc(100vh - 110px);
+
+    overflow-y:auto;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+.nav-link{
+
+    color:#ffffff!important;
+
+    padding:14px 0!important;
+
+}
+
+.nav-link::after{
+
+    display:none;
+
+}
+
+.dropdown-menu{
+
+    position:static;
+
+    float:none;
+
+    width:100%;
+
+    background:#1F2937;
+
+    border-radius:12px;
+
+    box-shadow:none;
+
+    margin-top:10px;
+
+}
+
+.dropdown-item{
+
+    color:#ffffff;
+
+}
+
+.dropdown-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.mega-menu{
+
+    padding:10px;
+
+}
+
+.mega-menu img{
+
+    display:none;
+
+}
+
+}
+
+
+/* ==========================================
+   CONNECT BUTTON
+========================================== */
+
+.connect-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.header.scrolled .connect-btn{
+
+    color:var(--dark);
+
+}
+
+.connect-btn:hover{
+
+    color:var(--primary);
+
+}
+
+.connect-btn img{
+
+    width:28px;
+
+}
+
+
+/* ==========================================
+   MOBILE MENU OPEN — SCROLL LOCK
+========================================== */
+
+body.menu-open{
+
+    overflow:hidden;
+
+}
+
+html:has(body.menu-open){
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================
+   HEADER SPACER
+========================================== */
+
+.header-space{
+
+    height:90px;
+
+}

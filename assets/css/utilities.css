@@ -1,0 +1,637 @@
+/* ==========================================
+   CHARZEE
+   UTILITIES.CSS
+========================================== */
+
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:var(--fs-h2);
+
+    color:var(--heading);
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 34px;
+
+    border-radius:var(--radius-full);
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+
+/* Primary Button */
+
+.btn-primary{
+
+    background:var(--gradient-primary);
+
+    color:var(--white);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-lg);
+
+    color:var(--white);
+
+}
+
+
+/* Outline Button */
+
+.btn-outline{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:transparent;
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+
+/* White Button */
+
+.btn-light{
+
+    background:var(--white);
+
+    color:var(--dark);
+
+}
+
+.btn-light:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* Dark Button */
+
+.btn-dark{
+
+    background:var(--dark);
+
+    color:var(--white);
+
+}
+
+.btn-dark:hover{
+
+    background:var(--primary);
+
+}
+
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(6,191,191,.12);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card{
+
+    background:var(--white);
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.card img{
+
+    width:100%;
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.card-body{
+
+    padding:30px;
+
+}
+
+.card-title{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.card-text{
+
+    color:var(--gray);
+
+}
+
+
+/* ==========================================
+   ICON BOX
+========================================== */
+
+.icon-box{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ==========================================
+   SHADOW
+========================================== */
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* ==========================================
+   BORDER RADIUS
+========================================== */
+
+.rounded{
+
+    border-radius:var(--radius);
+
+}
+
+.rounded-lg{
+
+    border-radius:var(--radius-lg);
+
+}
+
+.rounded-circle{
+
+    border-radius:50%;
+
+}
+
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.bg-primary{
+
+    background:var(--gradient-primary);
+
+}
+
+.bg-light{
+
+    background:var(--light);
+
+}
+
+.bg-dark{
+
+    background:var(--dark);
+
+    color:var(--white);
+
+}
+
+
+/* ==========================================
+   FLEX UTILITIES
+========================================== */
+
+.d-flex{
+
+    display:flex;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.justify-center{
+
+    justify-content:center;
+
+}
+
+.justify-between{
+
+    justify-content:space-between;
+
+}
+
+.flex-column{
+
+    flex-direction:column;
+
+}
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.gap-10{
+
+    gap:10px;
+
+}
+
+.gap-20{
+
+    gap:20px;
+
+}
+
+.gap-30{
+
+    gap:30px;
+
+}
+
+
+/* ==========================================
+   SPACING
+========================================== */
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mt-50{
+
+    margin-top:50px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-30{
+
+    margin-bottom:30px;
+
+}
+
+.mb-50{
+
+    margin-bottom:50px;
+
+}
+
+.py-100{
+
+    padding:100px 0;
+
+}
+
+.py-80{
+
+    padding:80px 0;
+
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.img-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.img-radius{
+
+    border-radius:var(--radius-lg);
+
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary);
+
+}
+
+.text-gray{
+
+    color:var(--gray);
+
+}
+
+.text-white{
+
+    color:var(--white);
+
+}
+
+.fw-600{
+
+    font-weight:600;
+
+}
+
+.fw-700{
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================
+   HOVER EFFECT
+========================================== */
+
+.hover-up{
+
+    transition:var(--transition);
+
+}
+
+.hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.divider{
+
+    width:80px;
+
+    height:4px;
+
+    background:var(--gradient-primary);
+
+    margin:20px auto 0;
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   REUSABLE SECTION-BOUNDED STICKY MEDIA
+   (same sticky-scroll behaviour used on the product-hero
+   pages, generalised so it can be reused on any two-column
+   section where one side is a short image and the other side
+   is long-form content).
+
+   HOW TO USE:
+   1. Add class="sticky-scroll-section" to the outer <section>.
+   2. Add class="sticky-scroll-section-row" to the Bootstrap
+      row that holds the two columns (in addition to any
+      existing row classes, e.g. "row align-items-center g-5").
+   3. Add class="sticky-scroll-media" to the element that wraps
+      the image (in addition to its existing class, e.g.
+      "about-image sticky-scroll-media").
+
+   Behaviour: on desktop (>=992px) the image column stays
+   pinned in view at top:96px while the taller sibling column
+   scrolls past it, and releases automatically at the row's
+   bottom edge — no JS required. On tablet/phone the columns
+   stack and normal document scrolling is used instead.
+========================================================== */
+@media (min-width: 992px) {
+
+    .sticky-scroll-section {
+        overflow: visible !important;
+    }
+
+    .sticky-scroll-section > .container,
+    .sticky-scroll-section-row {
+        overflow: visible !important;
+    }
+
+    /* Both columns share the row's full height (stretch) so the
+       media column is as tall as the longer content column next
+       to it — that extra height is the "room" the sticky child
+       needs to travel through before it releases. */
+    .sticky-scroll-section-row {
+        align-items: stretch !important;
+    }
+
+    /* The column itself is NOT sticky and keeps its stretched
+       height — that height defines where the sticky child inside
+       it releases. */
+    .sticky-scroll-section-row > [class*="col-"] {
+        position: relative !important;
+        top: auto !important;
+    }
+
+    /* This is the element that actually pins. */
+    .sticky-scroll-media {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 96px !important;
+        height: fit-content !important;
+        max-height: calc(100vh - 112px) !important;
+        overflow: visible !important;
+        z-index: 5;
+    }
+
+    .sticky-scroll-media img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: calc(100vh - 145px) !important;
+        object-fit: contain !important;
+    }
+
+}
+
+/* Tablet/phone: columns stack, so normal document scrolling is
+   more natural — sticky is switched off and the image reflows
+   normally. */
+@media (max-width: 991.98px) {
+
+    .sticky-scroll-section-row > [class*="col-"],
+    .sticky-scroll-media {
+        position: relative !important;
+        top: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .sticky-scroll-media img {
+        max-height: none !important;
+    }
+
+}

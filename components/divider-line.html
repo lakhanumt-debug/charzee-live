@@ -1,0 +1,44 @@
+<!-- ==========================================
+     SECTION DIVIDER LINE
+========================================== -->
+
+<style>
+.section-divider-line {
+    padding: 30px 0;
+    background: transparent;
+}
+
+.divider-line {
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(6,191,191,.3) 25%, 
+        rgba(6,191,191,.5) 50%, 
+        rgba(6,191,191,.3) 75%, 
+        transparent 100%);
+    border: none;
+    box-shadow: 0 2px 8px rgba(6,191,191,.1);
+}
+
+@media (max-width: 768px) {
+    .section-divider-line {
+        padding: 25px 0;
+    }
+
+    .divider-line {
+        height: 1.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-divider-line {
+        padding: 20px 0;
+    }
+}
+</style>
+
+<div class="section-divider-line">
+    <div class="container">
+        <div class="divider-line"></div>
+    </div>
+</div>

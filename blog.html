@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Charzee EV Solutions</title>
+    <meta name="description" content="Read Charzee's expert blogs on Solar Energy, EV Charging Infrastructure and Battery Energy Storage Systems. Stay informed about clean energy solutions.">
+    <meta name="keywords" content="EV charging blog, solar energy India, BESS battery storage, Charzee blog">
+    <meta name="author" content="Charzee">
+    <meta name="theme-color" content="#06BFBF">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <style>
+        /* ── Blog Listing Page Styles ── */
+        .blog-listing-hero {
+            background: linear-gradient(135deg, #0d1b2e 0%, #0d3b6e 100%);
+            padding: 160px 0 80px;
+            text-align: center;
+            color: #fff;
+        }
+        .blog-listing-hero .section-badge {
+            background: rgba(6,191,191,.18);
+            color: #06BFBF;
+            border: 1px solid rgba(6,191,191,.3);
+        }
+        .blog-listing-hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 18px 0 20px;
+            color: #fff;
+        }
+        .blog-listing-hero p {
+            font-size: 18px;
+            color: rgba(255,255,255,.78);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Blog Cards */
+        .blog-card {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0,0,0,.08);
+            transition: .35s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,.14);
+        }
+        .blog-card-img {
+            position: relative;
+            overflow: hidden;
+            height: 240px;
+        }
+        .blog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .blog-card:hover .blog-card-img img {
+            transform: scale(1.07);
+        }
+        .blog-card-category {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: var(--gradient-primary);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .blog-card-body {
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 14px;
+        }
+        .blog-card-meta i {
+            color: var(--primary);
+            margin-right: 5px;
+        }
+        .blog-card-body h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.35;
+            margin-bottom: 14px;
+        }
+        .blog-card-body p {
+            color: #6B7280;
+            line-height: 1.8;
+            font-size: 15px;
+            flex: 1;
+            margin-bottom: 24px;
+        }
+        .blog-read-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 15px;
+            transition: .3s;
+            align-self: flex-start;
+        }
+        .blog-read-btn i {
+            transition: .3s;
+        }
+        .blog-read-btn:hover {
+            color: var(--primary-dark);
+            gap: 12px;
+        }
+
+        /* Section */
+        .blog-listing-section {
+            padding: 90px 0;
+            background: #f8fafc;
+        }
+
+        @media (max-width: 768px) {
+            .blog-listing-hero h1 { font-size: 34px; }
+            .blog-listing-hero { padding: 120px 0 60px; }
+            .blog-listing-section { padding: 60px 0; }
+            .blog-card-img { height: 200px; }
+        }
+        @media (max-width: 576px) {
+            .blog-listing-hero h1 { font-size: 27px; }
+            .blog-card-body { padding: 22px 18px; }
+            .blog-card-body h3 { font-size: 19px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <!-- Hero -->
+    <section class="blog-listing-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Knowledge Hub</span>
+                    <h1>Insights on Clean Energy &amp; EV Charging</h1>
+                    <p>Expert articles on Solar Energy, EV Charging Infrastructure and Battery Storage — written to help you make informed decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Listing -->
+    <section class="blog-listing-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Card 1 — Solar -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/products/solar-panels.webp" alt="Solar Energy Blog">
+                            <span class="blog-card-category">Solar Energy</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>6 min read</span>
+                            </div>
+                            <h3>How Solar Energy Is Changing the Way India Powers Itself</h3>
+                            <p>From rooftop installations to large-scale solar farms, discover how solar power is reducing costs, cutting emissions and building energy independence across India.</p>
+                            <a href="blog-solar.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 — EV Charger -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/products/ac-charger-banner.webp" alt="EV Charger Blog">
+                            <span class="blog-card-category">EV Charging</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>7 min read</span>
+                            </div>
+                            <h3>AC vs DC EV Chargers — Which One Do You Actually Need?</h3>
+                            <p>Not all EV chargers work the same way. This guide breaks down how AC and DC chargers differ in speed, cost, use case and installation — so you can choose correctly.</p>
+                            <a href="blog-ev-charger.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 — BESS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/brands/BESS.jpg" alt="BESS Blog">
+                            <span class="blog-card-category">Battery Storage</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>6 min read</span>
+                            </div>
+                            <h3>What Is BESS and Why Does It Matter for India's Energy Future?</h3>
+                            <p>Battery Energy Storage Systems are becoming a critical part of reliable power supply. Learn how BESS works, where it is used and why it is growing fast in India.</p>
+                            <a href="blog-bess.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <div id="serviceAgent"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/service-agent.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

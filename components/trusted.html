@@ -1,0 +1,432 @@
+<!-- ==========================================
+     TRUSTED BRANDS - CONTINUOUS SCROLL
+========================================== -->
+
+<section class="trusted section">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading text-center mb-5">
+
+            <h2 class="section-title trusted-title-badge">
+                Compatible With Leading EV Brands
+            </h2>
+
+            <p class="section-subtitle mx-auto">
+                Our EV charging infrastructure is designed to work seamlessly
+                with India's and the world's leading electric vehicle
+                manufacturers.
+            </p>
+
+        </div>
+
+        <!-- Continuous Brand Scroll -->
+        <div class="brands-scroll-container">
+            <div class="brands-scroll-wrapper">
+                <div class="brands-scroll-track">
+
+                    <!-- Original Brands -->
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/tata.jpg" alt="Tata Motors">
+                        </div>
+                        <h5>Tata Motors</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/mg.jpg" alt="MG Motor">
+                        </div>
+                        <h5>MG Motor</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/byd.jpg" alt="BYD">
+                        </div>
+                        <h5>BYD</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/mahindra.jpg" alt="Mahindra Electric">
+                        </div>
+                        <h5>Mahindra Electric</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/ather.jpg" alt="Ather Energy">
+                        </div>
+                        <h5>Ather Energy</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/truck.jpg" alt="Ola Electric">
+                        </div>
+                        <h5>Electric Truck</h5>
+                    </div>
+
+                    <!-- <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/BESS.jpg" alt="BESS Energy">
+                        </div>
+                        <h5>BESS Energy</h5>
+                    </div> -->
+
+                    <!-- Duplicated for Seamless Loop -->
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/tata.jpg" alt="Tata Motors">
+                        </div>
+                        <h5>Tata Motors</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/mg.jpg" alt="MG Motor">
+                        </div>
+                        <h5>MG Motor</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/byd.jpg" alt="BYD">
+                        </div>
+                        <h5>BYD</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/mahindra.jpg" alt="Mahindra Electric">
+                        </div>
+                        <h5>Mahindra Electric</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/ather.jpg" alt="Ather Energy">
+                        </div>
+                        <h5>Ather Energy</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/truck.jpg" alt="Ola Electric">
+                        </div>
+                        <h5>Ola Electric</h5>
+                    </div>
+
+                    <div class="brand-card-scroll">
+                        <div class="brand-logo-scroll">
+                            <img src="assets/images/brands/BESS.jpg" alt="BESS Energy">
+                        </div>
+                        <h5>BESS Energy</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Gradient Overlays for Smooth Fade -->
+            <div class="scroll-fade-left"></div>
+            <div class="scroll-fade-right"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+/* ══════════════════════════════════════════════
+   CONTINUOUS BRANDS SCROLL ANIMATION
+════════════════════════════════════════════════ */
+
+.trusted {
+    background: linear-gradient(135deg, rgba(6,191,191,.03) 0%, rgba(0,153,153,.02) 100%);
+    padding: 80px 0;
+}
+
+.brands-scroll-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+.brands-scroll-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.brands-scroll-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll-continuous 16s linear infinite;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.brands-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-continuous {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brand-card-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    min-width: 180px;
+    padding: 28px 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.06);
+    transition: all .35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.brand-card-scroll:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 32px rgba(6,191,191,.15);
+    background: linear-gradient(135deg, rgba(6,191,191,.05) 0%, rgba(0,153,153,.03) 100%);
+}
+
+.brand-logo-scroll {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 12px;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.brand-card-scroll:hover .brand-logo-scroll {
+    background: linear-gradient(135deg, rgba(6,191,191,.1) 0%, rgba(0,153,153,.05) 100%);
+}
+
+.brand-logo-scroll img {
+    max-width: 130px;
+    max-height: 85px;
+    object-fit: contain;
+    transition: all .3s ease;
+    opacity: 0.85;
+}
+
+.brand-card-scroll:hover .brand-logo-scroll img {
+    opacity: 1;
+    transform: scale(1.06);
+    filter: drop-shadow(0 4px 12px rgba(6,191,191,.2));
+}
+
+.brand-card-scroll h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color .3s ease;
+}
+
+.brand-card-scroll:hover h5 {
+    color: #06BFBF;
+}
+
+/* Fade Overlays for Smooth Edges */
+.scroll-fade-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.scroll-fade-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .brand-card-scroll {
+        min-width: 160px;
+        padding: 24px 16px;
+        gap: 10px;
+    }
+
+    .brand-logo-scroll {
+        height: 90px;
+    }
+
+    .brand-logo-scroll img {
+        max-width: 120px;
+        max-height: 75px;
+    }
+
+    .brand-card-scroll h5 {
+        font-size: 12px;
+    }
+
+    @keyframes scroll-continuous {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .brands-scroll-track {
+        gap: 16px;
+    }
+
+    .brand-card-scroll {
+        min-width: 150px;
+        padding: 22px 14px;
+    }
+
+    .scroll-fade-left,
+    .scroll-fade-right {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trusted {
+        padding: 0px 0;
+    }
+
+    .brands-scroll-track {
+        gap: 14px;
+        animation: scroll-continuous-mobile 50s linear infinite;
+    }
+
+    .brand-card-scroll {
+        min-width: 140px;
+        padding: 20px 12px;
+        gap: 8px;
+    }
+
+    .brand-logo-scroll {
+        height: 80px;
+    }
+
+    .brand-logo-scroll img {
+        max-width: 100px;
+        max-height: 65px;
+    }
+
+    .brand-card-scroll h5 {
+        font-size: 11px;
+    }
+
+    .scroll-fade-left,
+    .scroll-fade-right {
+        width: 50px;
+    }
+
+    @keyframes scroll-continuous-mobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .trusted {
+        padding: 50px 0;
+    }
+
+    .brands-scroll-track {
+        gap: 12px;
+        padding: 15px 0;
+        animation: scroll-continuous-small 45s linear infinite;
+    }
+
+    .brand-card-scroll {
+        min-width: 120px;
+        padding: 18px 10px;
+        gap: 6px;
+    }
+
+    .brand-logo-scroll {
+        height: 70px;
+    }
+
+    .brand-logo-scroll img {
+        max-width: 85px;
+        max-height: 55px;
+    }
+
+    .brand-card-scroll h5 {
+        font-size: 10px;
+    }
+
+    .scroll-fade-left,
+    .scroll-fade-right {
+        width: 40px;
+    }
+
+    @keyframes scroll-continuous-small {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .brands-scroll-track {
+        gap: 10px;
+    }
+
+    .brand-card-scroll {
+        min-width: 100px;
+        padding: 16px 8px;
+        gap: 6px;
+    }
+
+    .brand-logo-scroll {
+        height: 65px;
+    }
+
+    .brand-logo-scroll img {
+        max-width: 75px;
+        max-height: 50px;
+    }
+
+    .brand-card-scroll h5 {
+        font-size: 9px;
+    }
+}
+</style>
